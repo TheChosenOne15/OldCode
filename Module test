@@ -1,0 +1,10 @@
+from Sequence import hokage
+from Sequence import uchiha
+from Sequence import ninja
+from Random import stars
+
+print(hokage)
+print(uchiha[0])
+print(ninja)
+print(stars)
+

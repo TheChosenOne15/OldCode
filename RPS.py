@@ -1,0 +1,29 @@
+import random
+
+jutsu = input("What's your element?")
+
+elements = ["fire", "wind", "water"]
+
+oppJutsu = (random.choice(elements))
+
+print(jutsu)
+print("Opponent picks jutsu now: " , oppJutsu)
+
+if jutsu == oppJutsu:
+    print("Both ninja selected " , oppJutsu, "! It's a deadlock")
+elif jutsu == "fire":
+    if oppJutsu == "wind":
+        print("The wind will increase the fire. You gain more power and win")
+    else:
+        print("Water neutralizes the flames. You lose")
+elif jutsu == "wind":
+    if oppJutsu == "water":
+        print("Wind vaccums up the water or whatever. Typhoon is in your control and you win")
+    else: 
+        print("Wind only makes the flames stronger. You're done")
+elif jutsu == "water":
+    if oppJutsu == "fire":
+        print("Water splahses on the fire and puts it out. You win. Take his sharingan")
+    else: 
+        print("Water is taken by the wind and used against you. You better run")
+
